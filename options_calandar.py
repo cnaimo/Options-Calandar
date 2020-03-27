@@ -16,6 +16,7 @@ for i in range(2000, 2025):
             options_expiration.append(str(caly[x][0][2][4]))
 
 # get trading days from stock historical data
+# free data available from Yahoo Finance, Alpha Vantage, etc.
 data = pd.read_csv("SPY_daily.csv", index_col=0, header=0)
 
 cal = data[['date']]
